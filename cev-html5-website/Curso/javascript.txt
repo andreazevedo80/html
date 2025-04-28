@@ -1,0 +1,14 @@
+function acendeLampada() {
+        
+    }
+
+    tudo que estiver dentro de () são parametros
+    tudo que estiver dentro de {} são códigos
+
+
+document.getElementById("id_do_elemento"); onde:
+- document: Representa o documento HTML completo.
+- getElementById: É o método que realiza a busca.
+- "id_do_elemento": É a string que corresponde ao valor do atributo id do elemento que você quer encontrar.
+
+adicionar o java ao HTML-> <script src="js/scripts.js"></script>

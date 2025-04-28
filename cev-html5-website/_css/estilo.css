@@ -1,0 +1,284 @@
+@charset "UTF-8"; /* Para não ter problema de acentuação */
+
+/* Formatação da fonte usando url em pasta interna */
+@font-face {
+    font-family: 'fonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/* Formatação da fonte usando url do google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: rgba(0,0,0,1);
+}
+
+/* Formatação da div */
+
+div#interface {
+    width: 1200px;
+    background-color: white;
+    margin: -20px auto 0px auto; /* Formatação da margem cima, direita, baixo e esquerda */
+    padding: 10px; /* Formatação da margem cima, direita, baixo e esquerda */
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Formatação do cabecalho */
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px; /* Define a altura do cabeçalho*/
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+    font-family: 'fonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0px;
+    margin-bottom: 0px; /* Define a margem de baixo*/
+}
+
+header#cabecalho h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px; /* Define a margem de cima*/
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1100px;
+    top: 60px;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+    position: relative;
+    border: 6px solid white;
+    box-shadow: 1px 1px 8px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0%;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    box-sizing: border-box; /* cria um box dentro da borda */
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+figure.foto-legenda figcaption h3 {
+    font-size:50px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    margin-top: 35%;
+    color: burlywood;
+}
+figure.foto-legenda figcaption p {
+    font-size:50px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+/* Formatação do Menu*/
+
+/* formatação para o menu*/
+nav#menu {
+    display: block;
+}
+
+/* formatação para a lista*/
+nav#menu ul {
+    list-style: nome; /* tirar os marcadores da lista*/
+    text-transform: uppercase; /* colocar as letras em maiúscula*/   
+    position:absolute;  /* faz com que passe por cima dos outros documentos*/ 
+    top: -18px;
+    left:50%;
+
+}
+
+/* formatação para os itens da lista*/
+
+nav#menu li {
+    display: inline-block; /* exibe o bloco na mesma linha*/
+    background-color: #ddddde;
+    padding: 10px; /* espaço da palavra para as bordas */
+    margin: 2px; /* espaço da palavra fora das bordas */
+    transition: background-color 1s;
+}
+
+/* formatação para os itens da lista ao passar o mouse por cima*/
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+/* formatação para o item título h1*/
+
+nav#menu h1 {
+    display: none; /* serve para esconder um item no caso, escondendo o Título Menu Principal */
+}
+
+/* formatação para link*/
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+}
+
+/* formatação para seção*/
+
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+article#noticia-principal h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background: white;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12px;
+    color:#606060;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+table#tabelaspec td.ce {
+    color: white;
+    background-color: #606060;
+    vertical-align: text-top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption spam {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 550px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo' , sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
+}
+
+footer#rodape {
+    clear: both;  /* remove sa configurações das seções*/
+    border-top: 1px solid #606060;
+    padding-top: 20px;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+

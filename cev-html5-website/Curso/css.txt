@@ -1,0 +1,142 @@
+CSS interno
+
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+
+CSS externo
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+_________________________________
+
+Para usar o CLASS, utilizamos o caractere de ponto (.) e para o ID, utilizaremos a cerquilha (#)
+_________________________________
+
+WIDTH (largura)
+HEIGHT (altura)
+
+_________________________________
+
+background-color: red; define a cor de fundo
+background-image: url("fundo.jpg"); coloca imagem no fundo
+color: red; - define a cor do texto a ser usada.
+color: rgba(0,0,0,0.5); transparencia para texto, vai de 0 <-> 1 (configuração do canal alpha, que vai de 0 até 1)
+
+red; cor pelo nome
+#000000 -> cor em hexa
+rgb (35, 137, 195); -> cor por rgb
+rgba (35, 137, 195, 0.5); -> cor rgb com transparencia
+hsl (165, 81%, 93%); -> cor em matiz, saturação e luminosidade
+hsla (165, 81%, 93%, 0.5); -> cor em matrix, saturação e luminosidade com transparencia (configuração do canal alpha, que vai de 0 até 1)
+_________________________________
+
+text-decoration: underline; texto sublinhado
+text-decoration: overline; texto com linha acima
+text-decoration: line-through; texto riscado
+text-decoration: none; texto sem formatação (caso tenha uma primária e não quer formatação na secundária)
+
+text-align: center; alinha o texto ao centro
+text-align: left; alinha o texto a esquerda (valor padrão)
+text-align: rigth; alinha o texto a direita
+text-align: justify; alinhamento de texto justificado
+text-indent: 50px; espaçamento para paragrafo
+
+_________________________________
+
+dentro do html para modificar o texto
+
+<sup></sup> sobrescrito
+<sub></sub> subscrito
+_________________________________
+
+<pre></pre> todos os espaços e enters seram considerados
+<code> </code> para formatar códigos
+_________________________________
+
+font-weight: normal; formatação de texto normal
+font-weight: bold; formatação de texto em negrito
+font-weight: bolder; formatação de texto mais negrito
+font-weight: 100-900; formatação de texto definido pela expessura entre 100 e 900
+
+font-family: 'FonteLogo', sans-serif; Com Serifa tem os traços nas pontas da letra, Sem Serifa sem traços na ponta da letra.
+
+font-family - define a fonte a ser usada.
+
+font-size - define o tamanho do texto a ser usado.
+
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+
+_________________________________
+
+padding - define um preenchimento (espaço) entre o texto e a borda
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+_________________________________
+
+margin - define uma margem (espaço) fora da fronteira
+
+_________________________________
+
+IMAGENS
+GIMP editor de imagem gratuita
+usar a opção salvar para web nos editores
+
+png -> permite a transparencia na borda (ele é maior que o jpg), só use se precisar da transparencia da borda
+
+width="300" - largura da imagem
+<img src="fundo.jpg">
+<img src="fundo.jpg" alt="nome da imagem"> atributo alt alt="nome da imagem" deve ser inserido sempre
+--------------------------------------
+<figure> Novos parâmetros FIGURE e FIGCAPTION. O HTML5 ganhou um caráter semântico, e utilizar legendas de imagens em HTML5 é um ótimo recurso para otimizar seu site para mecanismos de busca, técnicas conhecidas como SEO.
+
+exemplo:
+
+<figure>
+<img src="fundo.jpg" alt="nome da imagem">
+<figcaption>
+<h3> google glass</h3>
+<p> uma nova maneira de ver o mundo</p>
+</figcaption>
+</figure>
+--------------------------------------
+
+formatação de imagens
+
+_______________________________________
+
+position:
+static: Posição padrão, segue o fluxo normal.
+relative: Posição relativa ao seu lugar original. (ele terá a localização feita em relação à sua posição atual)
+absolute: Posição absoluta em relação ao primeiro ancestral posicionado (ele terá a localização feita em relação a todo o conteúdo..)
+fixed: Posição fixa em relação à janela do navegador.
+sticky: Combinação de relative e fixed.
+
+Para posicionar elementos, utilizamos as propriedades top, bottom, left e right em conjunto com position.
+
+Atributos chave para posicionamento relativo:
+
+top: Define a distância entre a borda superior do elemento e sua posição original.
+bottom: Define a distância entre a borda inferior do elemento e sua posição original.
+left: Define a distância entre a borda esquerda do elemento e sua posição original.
+right: Define a distância entre a borda direita do elemento e sua posição original.
+
+_______________________________________
+
+TRANSITION com CSS adiciona efeitos de transição ao modificar características visuais em um objeto.
+ 
+
+O justify-content vai centralizar na horizontal e o align-items na vertical
+
+https://www.youtube.com/watch?v=vY7GJVH8JfQ (aula flex box)

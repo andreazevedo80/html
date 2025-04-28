@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+</head>
+<script>
+    var quebrada = false;
+    function mudaLampada(tipo) {
+        if (tipo == 1) {
+            arquivo = "_imagens/lampada-acesa.jpg";
+        }
+        if (tipo == 2) {
+            arquivo = "_imagens/lampada-apagada.jpg";
+        }
+        if (tipo == 3) {
+            arquivo = "_imagens/lampada-quebrada.jpg"
+            }
+        if (!quebrada){
+            document.getElementById("luz").src=arquivo;
+            if (tipo == 3)
+            quebrada = true;
+        }        
+        /* alert ("Lampada Acendeu"); */
+    }
+    function mudaLampada2(tipo) {
+        if (tipo == 1) {
+            arquivo = "_imagens/lampada-acesa.jpg";
+        }
+        if (tipo == 2) {
+            arquivo = "_imagens/lampada-apagada.jpg";
+        }
+        if (tipo == 3) {
+            arquivo = "_imagens/lampada-quebrada.jpg";
+        }
+        if (!quebrada) {
+            document.getElementById("luz2").src=arquivo;
+            if (tipo == 3)
+            quebrada = true;
+        }
+        /* alert ("Lampada Acendeu"); */
+    }
+
+</script>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onclick="mudaLampada(1)" ondblclick="mudaLampada(2)">;
+    <br>
+    <img src="_imagens/lampada-apagada.jpg" id="luz2" onmousemove="mudaLampada2(1)" onmouseout="mudaLampada2(2)" onclick="mudaLampada2(3)">;
+</body>
+</html>

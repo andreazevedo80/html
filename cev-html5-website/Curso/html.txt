@@ -1,0 +1,208 @@
+Tags
+
+<header>
+Função: Define o cabeçalho de um documento ou seção.
+Uso: Geralmente contém o título da página, logotipo, menu de navegação principal e outras informações introdutórias.
+
+<section>
+Função: Representa uma seção genérica dentro de um documento.
+Uso: Divide o conteúdo em partes temáticas ou funcionais, como introdução, corpo principal e conclusão.
+
+<aside>
+Função: Contém conteúdo relacionado, mas não essencial para o fluxo principal do documento.
+Uso: Pode ser usado para caixas de informações adicionais, barras laterais, citações, anúncios ou outros elementos complementares.
+
+<nav>
+Função: Define uma seção de navegação.
+Uso: Envolve links para outras páginas do site, facilitando a navegação do usuário.
+
+<footer>
+Função: Define o rodapé de um documento ou seção.
+Uso: Contém informações como copyright, links para políticas de privacidade, informações de contato, mapa do site e outros detalhes relevantes.
+
+<article>
+Função: Representa um conteúdo independente e autocontido.
+Uso: Ideal para posts de blog, artigos de notícias, comentários, fóruns e outros conteúdos que podem ser distribuídos ou sindicados.
+
+<!DOCTYPE html> <!-- Padrão HTML 5 -->
+<html lang="pt-BR"> <!-- Linguagem do site -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, garantindo suporte a caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a página para ser responsiva em dispositivos móveis -->
+
+Onde: 
+1. name="viewport": Define o tipo de configuração que está sendo especificada. No caso do viewport, ele é utilizado para controlar as dimensões e o escalonamento da página em dispositivos móveis.
+
+2. content="width=device-width": Define a largura da área de visualização (viewport) para ser igual à largura do dispositivo. Isso significa que a página será dimensionada para caber na largura da tela do dispositivo, o que é crucial para a responsividade em telas de diferentes tamanhos.
+
+3. initial-scale=1.0: Define o nível inicial de zoom quando a página é carregada. Um valor de 1.0 significa que a página é mostrada em 100% de escala, ou seja, sem zoom.
+
+    <title>Document</title> <!-- Define o título da página que aparece na aba do navegador -->
+</head>
+<body>
+    
+</body>
+</html>
+
+<h1> to <h6> <!-- Cabeçalhos -->
+<p></p> <!-- Paragrafo -->
+<br> <!-- Quebra de linha (Break row) --> 
+<hr> <!-- Quebra temática - uma linha -->
+&nbsp; <!-- Non-breaking Space - espaço sem quebra-->
+<wbr> <!-- Work Breaker - quebra de palavra-->
+&shy; <!-- Soft Hyphen - quebra de palavra com hifem-->
+
+Simbolos especiais:
+&lt; <
+&gt; >
+&le; menor igual
+&ge; maior igual
+
+&pound; dinheiro libra
+&yen; dinheiro yenes
+&euro; dinheiro euros
+
+&copy; Company
+&reg; marca registrada
+&trade; Trademarker
+
+&permil; Porcentagem dividada por Mil
+&sum; soma
+&infin; infinito
+&times; multiplicação
+&plusmn; +/-
+&oplus; Mais dentro de uma circunferência
+&radic; raiz quadrada
+&ne; diferentes
+
+&Delta; Delta
+&Lambda;
+&omega;
+&phi;
+
+&larr; seta para esquerda
+&rarr; seta para a direira
+&uarr; seta para cima
+&darr; seta pra baixo
+&harr; seta para os dois lados
+
+&spades; espada
+&clubs; paus
+&hearts; coração
+&diams; ouro 
+
+Atributos
+<a href="https://www.w3schools.com">Visit W3Schools</a> <!-- A tag define um hiperlink. O atributo especifica a URL da página -->
+
+<a href="https://www.w3schools.com">Visit W3Schools target=[_blank, _self, _top, _parent]</a> onde:
+_blank -> Abre o link em uma nova aba.
+_self -> Abre o link na mesma aba em que o link atual está. (Este é o valor padrão.)
+_top -> Abre o link na janela inteira do navegador, removendo quaisquer frames ou barras de ferramentas.
+_parent -> Abre o link no frame pai do frame atual. (Este valor não é muito usado atualmente.)
+
+<img src="img_girl.jpg"> <!-- O atributo Especifica o caminho para a imagem a ser exibida -->
+onde:
+1. URL absoluto - src="https://www.w3schools.com/images/img_girl.jpg"
+2. URL relativa - src="/images/img_girl.jpg"
+
+<img src="img_girl.jpg" width="500" height="600"> <!-- Atributo define a largura e altura em pixels -->
+<img src="img_girl.jpg" alt="Girl with a jacket"> <!-- O atributo especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. -->
+
+
+Style <!-- Define o estilo -->
+background-color:powderblue; <!-- Define a cor de fundo da página ou do texto-->
+color:red; <!-- define a cor do texto -->
+font-family:verdana; <!-- define a fonte a ser usada do texto -->
+font-size:300% <!-- define o tamanho do texto -->
+font-weight: bold <!-- define a expessura do texto -->
+text-align:center; <!-- define o alinhamento horizontal do texto -->
+onde:
+left: Alinha o texto à esquerda.
+right: Alinha o texto à direita.
+center: Centraliza o texto horizontalmente dentro do elemento.
+justify: Justifica o texto, distribuindo as palavras uniformemente para que as margens esquerda e direita fiquem alinhadas.
+
+border: 2px solid; <!-- define o tamanho do texto (border largura estilo cor --> onde:
+Estilo:
+none (Não exibe nenhuma borda)
+hidden (Similar a none, mas pode afetar o layout em algumas situações)
+dotted (Exibe uma série de pontos arredondados.)
+dashed (Exibe uma série de traços.)
+solid (Exibe uma linha sólida.)
+double (Exibe duas linhas sólidas.)
+groove (Cria um efeito de sulco ou gravação.)
+ridge (Similar a groove, mas com a aparência de uma crista.)
+inset (Cria um efeito de borda interna, como se o elemento estivesse afundado.)
+outset (Cria um efeito de borda externa, como se o elemento estivesse levantado.)
+
+border-top: Define a borda superior.
+border-right: Define a borda direita.
+border-bottom: Define a borda inferior.
+border-left: Define a borda esquerda.
+border-radius: Arredonda as bordas. (border-radius: 10px;)
+border-image: Aplica uma imagem como borda.
+
+
+Uma tabela em HTML consiste em células de tabela dentro de linhas e colunas.
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+Tags de Tabela
+<table>  : Define uma tabela.
+<th>  : Define uma célula de cabeçalho em uma tabela.
+<tr>  : Define uma linha em uma tabela. (Table Rows)
+<td>  : Define uma célula em uma tabela.
+<caption>  : Define uma legenda para uma tabela.
+<colgroup>  : Especifica um grupo de uma ou mais colunas em uma tabela para formatação.
+<col>  : Especifica propriedades da coluna para cada coluna dentro de um elemento <colgroup>.
+<thead>  : Agrupa o conteúdo do cabeçalho em uma tabela.
+<tbody>  : Agrupa o conteúdo do corpo em uma tabela.
+<tfoot>  : Agrupa o conteúdo do rodapé em uma tabela
+<td rowspan="2"> faz com que ocupe 2 linhas (mesclar)
+<td colspan="2"> faz com que ocupe 2 colunas (mesclar)
+
+
+LISTAS não ordenada (com marcador circulo)
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<ul type="square"> -> substitui o marcador circulo por quadrado
+<ul type="circle"> -> substitui o marcador circulo por circulo branco com bordas pretas
+<ul type="disc"> -> circulo padrão
+
+Lista HTML ordenada
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="1"> -> Lista ordenada numéricamente
+<ol type="a"> -> Lista ordenada pelo alfabeto letra miniscula
+<ol type="A"> -> Lista ordenada pelo alfabeto letra maiuscula
+<ol type="i"> -> Lista ordenada por números romanos minusculo
+<ol type="I"> -> Lista ordenada por números romanos maiusculo
+<ol type="1" start="3"> -> Lista ordenada numéricamente, começando pelo 3 (start só aceita valores numéricos)
+
+<span> Permite aplicar estilos CSS a partes específicas de um texto, como cores diferentes, fontes, tamanhos, etc.
+
+O elemento <div>
+O elemento é, por padrão, um elemento de bloco, o que significa que ele ocupa toda a largura disponível e vem com linha pausas antes e depois.<div>
+

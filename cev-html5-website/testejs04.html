@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+</head>
+<script>
+    var quebrada = false;
+    var quebrada1 = false;
+    function mudaLampada(tipo) {
+        if (!quebrada){
+            document.getElementById("luz").src="_imagens/" + tipo +".jpg";
+            if (tipo == 'lampada-quebrada') {
+                quebrada = true;
+            }
+        }        
+        /* alert ("Lampada Acendeu"); */
+    }
+    function mudaLampada2(tipo) {
+        if (!quebrada1) {
+            document.getElementById("luz2").src="_imagens/" + tipo +".jpg";
+            if (tipo == 'lampada-quebrada') {
+                quebrada1 = true;
+            }
+        }
+        /* alert ("Lampada Acendeu"); */
+    }
+
+</script>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onclick="mudaLampada('lampada-acesa')" ondblclick="mudaLampada('lampada-apagada')">;
+    <br>
+    <img src="_imagens/lampada-apagada.jpg" id="luz2" onmousemove="mudaLampada2('lampada-acesa')" onmouseout="mudaLampada2('lampada-apagada')" onclick="mudaLampada2('lampada-quebrada')">;
+</body>
+</html>
